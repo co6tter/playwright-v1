@@ -1,0 +1,22 @@
+{
+  "name": "playwright-v1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/co6tter/playwright-v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/co6tter/playwright-v1/issues"
+  },
+  "homepage": "https://github.com/co6tter/playwright-v1#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.3.0"
+  }
+}
