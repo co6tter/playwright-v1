@@ -34,17 +34,21 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    { name: 'setup', testMatch: /auth\.setup\.ts/ }, // 先に1回だけ実行
+
     {
       name: 'dir01',
       testDir: './tests/dir01',
       workers: 1,
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], storageState: '.auth/user.json' },
+      dependencies: ['setup'],
     },
     {
       name: 'dir02',
       testDir: './tests/dir02',
       workers: 1,
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], storageState: '.auth/user.json' },
+      dependencies: ['setup'],
     },
 
     // {
